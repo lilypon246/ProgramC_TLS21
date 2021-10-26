@@ -1,7 +1,6 @@
 #include <iostream>
 #include <conio.h>
-#include <chrono>
-#include <thread>
+
 
 using namespace std;
 
@@ -58,8 +57,8 @@ int main()
 
     cout<< "Your total score is\t"<< score << endl;
     if(score>=5) cout<< "It is highly likely you are extremely depressed.\n"<<"We recommend you to tell about how are your feeling to the professional. "<<endl;
-    else if(2<=score<=4) cout<<"It is likely you have mild depression\n"<<"Do you need someone to share your thought or to tell about your feeling? If so, I am totally open to hear anything from you :)"<<endl;
-    else if(score<=2) cout<<"It is highly unlikely you are suffering from depression."<<endl;
+    else if(score>=2 && score<=4) cout<<"It is likely you have mild depression\n"<<"Do you need someone to share your thought or to tell about your feeling? If so, I am totally open to hear anything from you :)"<<endl;
+    else cout<<"It is highly unlikely you are suffering from depression."<<endl;
 
 
     return 0;
